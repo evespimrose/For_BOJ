@@ -1,17 +1,30 @@
-// 2753
+// 14681
 #include <stdio.h>
 
 int main()
 {
-	int a = 0;
-	scanf("%d", &a);
+	int x = 0;
+	int y = 0;
+	scanf("%d", &x);
+	scanf("%d", &y);
 
-	if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0)
+	if (x && y)
 	{
-		printf("1");
-	}
-	else if(a >= 1 && a <= 4000)
-	{
-		printf("0");
+		if (x > 0 && y > 0)
+		{
+			printf("1");
+		}
+		else if (x < 0 && y > 0)
+		{
+			printf("2");
+		}
+		else if (x < 0 && y < 0)
+		{
+			printf("3");
+		}
+		else if (x > 0 && y < 0)
+		{
+			printf("4");
+		}
 	}
 }
