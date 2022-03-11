@@ -3,24 +3,29 @@
 
 int main()
 {
-	int h = 0;
-	int m = 0;
-	int t = 0;
-	scanf("%d", &h);
-	scanf("%d", &m);
-	scanf("%d", &t);
+	int a = 0;
+	int b = 0;
+	int c = 0;
 
-	if (h >= 0 && h <= 23 && m >= 0 && m <= 59 && t >= 0 && t <= 1000)
+	int prize;
+
+	scanf("%d", &a);
+	scanf("%d", &b);
+	scanf("%d", &c);
+
+	if (a == b && b == c)
 	{
-		h += t / 60;
-		m += t % 60;
-		if (m >= 60)
-		{
-			h++;
-			m %= 60;
-		}
-		if (h >= 24) 
-			h %= 24;
-		printf("%d %d", h, m);
+		prize = 10000 + (a * 1000);
 	}
+	else if (a == b) prize = 1000 + (a * 100);
+	else if (a == c) prize = 1000 + (a * 100);
+	else if (b == c) prize = 1000 + (b * 100);
+	else {
+		if (a > b && a > c) prize = a * 100;
+		else {
+			if (b > c) prize = b * 100;
+			else prize = c * 100;
+		}
+	}
+	printf("%d", prize);
 }
