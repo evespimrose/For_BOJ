@@ -1,30 +1,31 @@
-// 14681
+// 2884
 #include <stdio.h>
 
 int main()
 {
-	int x = 0;
-	int y = 0;
-	scanf("%d", &x);
-	scanf("%d", &y);
+	int h = 0;
+	int m = 0;
+	scanf("%d", &h);
+	scanf("%d", &m);
 
-	if (x && y)
+	if (h >= 0 && h <= 23 && m >= 0 && m <= 59)
 	{
-		if (x > 0 && y > 0)
+		if (m >= 45)
 		{
-			printf("1");
+			m = m - 45;
 		}
-		else if (x < 0 && y > 0)
+		else if (m < 45)
 		{
-			printf("2");
+			if (h > 0)
+			{
+				h = h - 1;
+			}
+			else
+			{
+				h = h + 23;
+			}
+			m = m + 15;
 		}
-		else if (x < 0 && y < 0)
-		{
-			printf("3");
-		}
-		else if (x > 0 && y < 0)
-		{
-			printf("4");
-		}
+		printf("%d %d", h, m);
 	}
 }
