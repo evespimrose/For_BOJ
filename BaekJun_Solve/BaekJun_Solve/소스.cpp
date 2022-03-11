@@ -1,4 +1,4 @@
-// 9498
+// 2753
 #include <stdio.h>
 
 int main()
@@ -6,24 +6,12 @@ int main()
 	int a = 0;
 	scanf("%d", &a);
 
-	if (a <= 100 && a >= 90)
+	if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0)
 	{
-		printf("A");
+		printf("1");
 	}
-	else if (a <90 && a >= 80)
+	else if(a >= 1 && a <= 4000)
 	{
-		printf("B");
-	}
-	else if(a < 80 && a >= 70)
-	{
-		printf("C");
-	}
-	else if (a < 70 && a >= 60)
-	{
-		printf("D");
-	}
-	else if (a < 60 && a >= 0)
-	{
-		printf("F");
+		printf("0");
 	}
 }
