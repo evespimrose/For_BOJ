@@ -1,22 +1,29 @@
-// 1330
+// 9498
 #include <stdio.h>
 
 int main()
 {
-	int a = 0, b = 0;
+	int a = 0;
 	scanf("%d", &a);
-	scanf("%d", &b);
 
-	if (a > b)
+	if (a <= 100 && a >= 90)
 	{
-		printf(">");
+		printf("A");
 	}
-	else if (a < b)
+	else if (a <90 && a >= 80)
 	{
-		printf("<");
+		printf("B");
 	}
-	else
+	else if(a < 80 && a >= 70)
 	{
-		printf("==");
+		printf("C");
+	}
+	else if (a < 70 && a >= 60)
+	{
+		printf("D");
+	}
+	else if (a < 60 && a >= 0)
+	{
+		printf("F");
 	}
 }
