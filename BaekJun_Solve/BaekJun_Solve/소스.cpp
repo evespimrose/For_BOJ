@@ -1,4 +1,4 @@
-// 2739
+// 10950
 #include <stdio.h>
 
 int main()
@@ -7,8 +7,13 @@ int main()
 
 	scanf("%d", &a);
 
-	for (int i = 1; i < 10; ++i)
+	int b = 0;
+	int c = 0;
+
+	for (int i = 1; i <= a; ++i)
 	{
-		printf("%d * %d = %d\n", a, i, a * i);
+		scanf("%d", &b);
+		scanf("%d", &c);
+		printf("%d\n", b + c);
 	}
 }
