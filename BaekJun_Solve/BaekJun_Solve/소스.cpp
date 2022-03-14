@@ -1,16 +1,24 @@
-// 8393
-#include <stdio.h>
+// 15552
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-	int a = 0;
-	int r = 0;
+	std::ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 
-	scanf("%d", &a);
+	int a;
+	int b;
+	int c;
 
-	for (int i = 1; i <= a; ++i)
+	cin >> a;
+
+	for (int i = 0; i < a; ++i)
 	{
-		r += i;
+		cin >> b;
+		cin >> c;
+		cout << b + c << "\n";
 	}
-	printf("%d", r);
+
 }
