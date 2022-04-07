@@ -1,4 +1,4 @@
-// 2741
+// 2742
 #include <iostream>
 
 using namespace std;
@@ -9,7 +9,7 @@ int main()
 
 	cin >> a;
 
-	for (int i = 1; i <= a; ++i)
+	for (int i = a; i >= 1; --i)
 	{
 		cout << i << "\n";
 	}
