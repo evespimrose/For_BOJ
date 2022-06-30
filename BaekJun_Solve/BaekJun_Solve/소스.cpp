@@ -1,17 +1,20 @@
-// 2742
+// 11022
 #include <iostream>
 
 using namespace std;
 
-int main()
-{
-	int a;
+int main() {
+	int count;
 
-	cin >> a;
+	scanf("%d", &count);
 
-	for (int i = a; i >= 1; --i)
+	for (int i = 0; i < count; i++) 
 	{
-		cout << i << "\n";
-	}
+		int a{}, b{};
 
+		scanf("%d %d", &a, &b);
+
+		printf("Case #%d: %d + %d = %d\n", i + 1, a, b, a + b);
+
+	}
 }
