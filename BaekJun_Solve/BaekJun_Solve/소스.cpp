@@ -4,17 +4,13 @@
 using namespace std;
 
 int main() {
-	int count;
+	int a{};
+	cin >> a;
 
-	scanf("%d", &count);
-
-	for (int i = 0; i < count; i++) 
+	for (int i = 0; i < a; ++i)
 	{
-		int a{}, b{};
-
-		scanf("%d %d", &a, &b);
-
-		printf("Case #%d: %d + %d = %d\n", i + 1, a, b, a + b);
-
+		for (int j = 0; j < i + 1; ++j)
+			cout << "*";
+		cout << endl;
 	}
 }
