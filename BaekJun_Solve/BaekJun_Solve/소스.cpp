@@ -1,19 +1,19 @@
-// 2439
+// 10871
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	int a{};
-	cin >> a;
-
-	for (int i = 1; i <= a; ++i)
+	int n{};
+	int x{};
+	int value{};
+	cin >> n >> x;
+	
+	for (int i = 0; i < n; ++i)
 	{
-		for (int j = 1; j <= a - i; ++j)
-			cout << " ";
-		for (int j = 1; j <= i; ++j)
-			cout << "*";
-		cout << endl;
+		cin >> value;
+		if (value < x)
+			cout << value;
 	}
-
+	
 }
