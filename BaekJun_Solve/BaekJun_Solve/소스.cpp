@@ -1,19 +1,17 @@
-// 10871
+// 10952
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	int n{};
-	int x{};
-	int value{};
-	cin >> n >> x;
+	int a;
+	int b;
 	
-	for (int i = 0; i < n; ++i)
+	while(true)
 	{
-		cin >> value;
-		if (value < x)
-			cout << value;
+		cin >> a >> b;
+		if (a == 0 && b == 0)
+			break;
+		cout << a + b << endl;
 	}
-	
 }
