@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(int argc, char const* argv[]) {
+int main() {
 
 	int king = 1;
 	int queen = 1;
@@ -11,7 +11,6 @@ int main(int argc, char const* argv[]) {
 	int knight = 2;
 	int pawn = 8;
 
-	// 입력받을 변수
 	int in_king, in_queen, in_rook, in_bishop, in_knight, in_pawn;
 
 	cin >> in_king;
