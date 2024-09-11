@@ -1,4 +1,3 @@
-#include <algorithm> 
 #include<iostream>
 #include<string>
 using namespace std;
@@ -8,5 +7,5 @@ int main()
     int i;
     cin >> s >> i;
 
-    cout << s[i-1] << endl;
+    cout << s.at(i-1) << endl;
 }
